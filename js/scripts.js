@@ -7,13 +7,15 @@ var a,
 	triangleArea = 3;
 	a = prompt("podaj a");
 	h = prompt("podaj h");
-	triangleArea = alert(a*h/2);
+
+if (isNaN(a)) {
+    alert("a nie jest liczbą!");
+}
+
+if (isNaN(h)) {
+    alert("h nie jest liczbą!");
+}
+
+var triangleArea = alert(a*h/2);
+
 console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
-
-if(isNaN (a)) {
-	alert("a nie jest liczbą!");
-}
-
-if(isNaN (h)) {
-	alert("h nie jest liczbą!");
-}
